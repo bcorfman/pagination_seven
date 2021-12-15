@@ -1,36 +1,15 @@
 [[package]]
-id = 8
-name = "attrs"
-version = "21.2.0"
-source = "pypi+https://pypi.org/pypi/attrs/21.2.0/json"
-dependencies = []
-
-[[package]]
-id = 2
-name = "tomli"
-version = "2.0.0"
-source = "pypi+https://pypi.org/pypi/tomli/2.0.0/json"
-dependencies = []
-
-[[package]]
-id = 1
-name = "pytest"
-version = "7.0.0rc1"
-source = "pypi+https://pypi.org/pypi/pytest/7.0.0rc1/json"
-dependencies = ["iniconfig 1.1.1 pypi+https://pypi.org/pypi/iniconfig/1.1.1/json", "packaging 21.3 pypi+https://pypi.org/pypi/packaging/21.3/json", "py 1.11.0 pypi+https://pypi.org/pypi/py/1.11.0/json", "attrs 21.2.0 pypi+https://pypi.org/pypi/attrs/21.2.0/json", "pluggy 1.0.0 pypi+https://pypi.org/pypi/pluggy/1.0.0/json", "tomli 2.0.0 pypi+https://pypi.org/pypi/tomli/2.0.0/json"]
-
-[[package]]
-id = 3
-name = "py"
-version = "1.11.0"
-source = "pypi+https://pypi.org/pypi/py/1.11.0/json"
-dependencies = []
-
-[[package]]
 id = 7
 name = "iniconfig"
 version = "1.1.1"
 source = "pypi+https://pypi.org/pypi/iniconfig/1.1.1/json"
+dependencies = []
+
+[[package]]
+id = 8
+name = "attrs"
+version = "21.2.0"
+source = "pypi+https://pypi.org/pypi/attrs/21.2.0/json"
 dependencies = []
 
 [[package]]
@@ -46,6 +25,27 @@ name = "packaging"
 version = "21.3"
 source = "pypi+https://pypi.org/pypi/packaging/21.3/json"
 dependencies = ["pyparsing 3.0.6 pypi+https://pypi.org/pypi/pyparsing/3.0.6/json"]
+
+[[package]]
+id = 3
+name = "py"
+version = "1.11.0"
+source = "pypi+https://pypi.org/pypi/py/1.11.0/json"
+dependencies = []
+
+[[package]]
+id = 2
+name = "tomli"
+version = "2.0.0"
+source = "pypi+https://pypi.org/pypi/tomli/2.0.0/json"
+dependencies = []
+
+[[package]]
+id = 1
+name = "pytest"
+version = "7.0.0rc1"
+source = "pypi+https://pypi.org/pypi/pytest/7.0.0rc1/json"
+dependencies = ["iniconfig 1.1.1 pypi+https://pypi.org/pypi/iniconfig/1.1.1/json", "attrs 21.2.0 pypi+https://pypi.org/pypi/attrs/21.2.0/json", "packaging 21.3 pypi+https://pypi.org/pypi/packaging/21.3/json", "py 1.11.0 pypi+https://pypi.org/pypi/py/1.11.0/json", "tomli 2.0.0 pypi+https://pypi.org/pypi/tomli/2.0.0/json", "pluggy 1.0.0 pypi+https://pypi.org/pypi/pluggy/1.0.0/json"]
 
 [[package]]
 id = 4
