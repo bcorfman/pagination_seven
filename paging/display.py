@@ -12,7 +12,7 @@ class Pages:
             regular_page_number = f'{p}'
             return selected_page_number if p == self.selected_page else regular_page_number
 
-        def shorten_list(pages):
+        def shorten_page_list(pages):
             if len(pages) > 7:
                 if self.selected_page in range(1, 5):
                     pages = [f'{p}' for i, p in enumerate(pages) if i + 1 < 6] + ['...', f'{self.total_pages}']
@@ -25,5 +25,5 @@ class Pages:
                             ['...', f'{self.total_pages}']
             return pages
 
-        formatted_pages = shorten_list([format_page_number(p) for p in range(1, self.total_pages+1)])
+        formatted_pages = shorten_page_list([format_page_number(p) for p in range(1, self.total_pages+1)])
         return ' '.join(formatted_pages)
