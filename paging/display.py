@@ -2,9 +2,9 @@
 class Pages:
     def __init__(self, **kwargs):
         if kwargs['selected'] < 1:
-            raise IndexError('ERROR: selected page < 1')
+            raise ValueError('ERROR: selected page < 1')
         if kwargs['total'] < 1:
-            raise IndexError('ERROR: total pages < 1')
+            raise ValueError('ERROR: total pages < 1')
         self.selected_page = kwargs['selected']
         self.total_pages = kwargs['total']
 
