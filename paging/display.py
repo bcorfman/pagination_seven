@@ -19,8 +19,9 @@ class Pages:
                 elif self.selected_page in range(self.total_pages - 3, self.total_pages + 1):
                     pages = ['1', '...'] + [p for i, p in enumerate(pages) if i + 1 > self.total_pages - 5]
                 else:
-                    pages = ['1', '...'] + [p for i, p in enumerate(pages)
-                                            if self.selected_page - 1 <= i+1 <=  self.selected_page + 1] + \
+                    selected_page = self.selected_page
+                    pages = ['1', '...'] + \
+                            [p for i, p in enumerate(pages) if selected_page - 1 <= i+1 <= selected_page + 1] + \
                             ['...', f'{self.total_pages}']
             return pages
 
