@@ -1,14 +1,25 @@
+[project]
+name = "Pagination Seven"
+version = "1.0"
+description = "A solution to the kata at https://codingdojo.org/kata/PaginationSeven/"
+authors = [
+    {name = "Brandon Corfman", email = "bcorfman@fastmail.fm"},
+]
+dependencies = []
+requires-python = ">=3.7"
+license = {text = "MIT"}
 
-[tool.pyflow]
-name = "pagination_seven"
-py_version = "3.9.9"
-version = "0.1.0"
-authors = ["Brandon Corfman <bcorfman@fastmail.fm>"]
+[project.urls]
+homepage = "https://github.com/bcorfman/pagination_seven"
 
-[tool.pyflow.scripts]
+[project.optional-dependencies]
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=6.2.5",
+]
 
-[tool.pyflow.dependencies]
-
-[tool.pyflow.dev-dependencies]
-pytest = "^7.0.0rc1"
-
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
