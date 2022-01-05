@@ -16,16 +16,16 @@ class Pages:
 
         def shorten_page_list(pages):
             if len(pages) > 7:
-                if self.selected_page in range(1, 5):
+                selected_page = self.selected_page
+                if selected_page in range(1, 5):
                     pages = [f'{p}' for i, p in enumerate(pages) if i + 1 < 6] + ['...', f'{self.total_pages}']
-                elif self.selected_page in range(self.total_pages - 3, self.total_pages + 1):
+                elif selected_page in range(self.total_pages - 3, self.total_pages + 1):
                     pages = ['1', '...'] + [p for i, p in enumerate(pages) if i + 1 > self.total_pages - 5]
                 else:
-                    selected_page = self.selected_page
                     pages = ['1', '...'] + \
                             [p for i, p in enumerate(pages) if selected_page - 1 <= i+1 <= selected_page + 1] + \
                             ['...', f'{self.total_pages}']
             return pages
-
+    
         formatted_pages = shorten_page_list([format_page_number(p) for p in range(1, self.total_pages+1)])
         return ' '.join(formatted_pages)
